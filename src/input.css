@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles to handle dropdown visibility without JavaScript */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    display: none;
+}
+
+/* Transition Properties */
+.animate-moveAndFade {
+    animation: moveAndFade 2s linear backwards;
+}
+
+@keyframes moveAndFade {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
