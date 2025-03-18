@@ -14,7 +14,7 @@
 </head>
 
 <!-- To turn on the dark mode simply put dark work inside the body class. -->
-<body class="h-screen">
+<body id="body" class="h-screen">
     <!-- Gradient Blue color -->
     <div id="home" class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-300 dark:from-slate-900 dark:to-slate-700 relative overflow-hidden">
         <!-- Navigation bar -->
@@ -22,7 +22,7 @@
             <div class="container m-auto p-2 flex justify-between">
                 <!-- logo -->
                 <span class="flex flex-col items-center gap-1">
-                    <img class="w-8 dark:hidden" src="./images//logo.jpg" alt="log image">
+                    <img class="w-8 dark:hidden" src="./images//logo.jpg" alt="logo image">
                     <img class="hidden dark:block w-8 " src="./images/logo_dark_mode.jpeg" alt="logo_dark_mode">
                     <small class="font-semibold dark:text-white">Portfolio</small>
                 </span>
@@ -95,6 +95,7 @@
             </div>
         </div>
     </div>
+
     <!-- About Section -->
     <div id="about" class="px-10 md:h-screen dark:bg-slate-900">
         <!-- Below is the Container container both right and left side. -->
@@ -181,7 +182,7 @@
     </div>
     <!-- Portfolio Section -->
     <div id="skills" class="md:h-screen dark:bg-slate-900">
-        <div class="container mx-auto flex flex-col items-center gap-3">
+        <div class="container mx-auto  flex flex-col items-center gap-3">
             <!-- First Part -->
             <h2 class="uppercase font-semibold text-indigo-600 text-lg">Portfolio</h2>
             <h2 class="text-3xl font-medium dark:text-slate-300">Works and Projects</h2>
@@ -246,6 +247,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
